@@ -7,6 +7,7 @@
     <title>Document</title>
   </head>
   <style>
+
     .Wrapper {
       height: 750px;
       /* border: solid; */
@@ -79,6 +80,7 @@
 
     </div>
     <div class="Wrapper">
+      <img src="../../static/img/Logo.svg" />
       <form action="{% url 'login' %}" method="POST">
         {% csrf_token %}<input
           placeholder="아이디"
