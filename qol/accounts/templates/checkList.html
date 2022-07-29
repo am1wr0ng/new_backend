@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>체크 리스트</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
     <style>
+      * {
+        font-family: "Noto Sans KR", sans-serif;
+      }
       .check-container {
         display: flex;
         flex-direction: column;
@@ -30,6 +39,13 @@
         font-size: 20px;
         font-weight: 60px;
       }
+      .img {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .dd {
+        margin-left: 10px;
+      }
     </style>
   </head>
   <body>
@@ -43,10 +59,8 @@
         </a>
         <p class="check-title">병원 가기 전 체크리스트</p>
       </div>
-      <div class="check-wrapper">
-        <div class="check-box">
-          <div class="check-title"></div>
-        </div>
+      <div class="img">
+        <img class="dd" width="375" src="../../static/img/checklist.png" />
       </div>
     </div>
   </body>
