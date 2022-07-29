@@ -1,0 +1,11 @@
+<h1>가까운 병원 찾기</h1>
+<form class="d-flex" method="POST" action="{% url 'search' %}">
+    {% csrf_token %}        
+    <input class="form-control me-2" type="search" placeholder="" name="searched" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit"> 검색 </button>
+</form>
+
+<!-- 지도 이미지 -->
+
+<a href="{% url 'hos_name' %}">신경란의원</a>
+서울 용산구 우사단로 2-1(보광동)

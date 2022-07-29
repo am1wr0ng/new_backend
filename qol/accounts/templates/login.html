@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .Wrapper {
+      height: 750px;
+      /* border: solid; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+    }
+
+    input {
+      box-sizing: border-box;
+      width: 300px;
+      height: 44px;
+      border-radius: 10px;
+      border: solid 1px #8460da;
+      background-color: #ffffff;
+
+      outline: none;
+    }
+
+    .loginButton {
+      margin-top: 20px;
+      background-color: #8460da;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .miniWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .miniWrapper span {
+      cursor: pointer;
+    }
+
+    .findpwButton {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-left: #8b8b8b 1px solid;
+      border-right: #8b8b8b 1px solid;
+    }
+
+    .signupButton {
+      color: #8460da;
+    }
+  </style>
+
+  <body>
+    <img src="../../static/img/Header.svg" />
+
+    </div>
+    <div class="Wrapper">
+      <form action="{% url 'login' %}" method="POST">
+        {% csrf_token %}<input
+          placeholder="아이디"
+          `type="text"
+          name="username"
+        /><br />
+        <input placeholder="비밀번호" type="password" name="password" />
+
+        <input class="loginButton" type="submit" value="로그인" />
+      </form>
+      <div class="miniWrapper">
+        <span color="#8b8b8b">아이디 찾기</span>
+        <span class="findpwButton" color="#8b8b8b">비밀번호 찾기</span>
+        <span class="signupButton"> 회원가입 </span>
+      </div>
+    </div>
+  </body>
+</html>
