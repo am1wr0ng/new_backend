@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>체크 리스트</title>
+    <style>
+      .check-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .header-div {
+        position: relative;
+        width: 375px;
+        height: 40px;
+      }
+      .back {
+        border: 0;
+        background-color: rgba(0, 0, 0, 0);
+        float: left;
+      }
+      .check-title {
+        position: absolute;
+        top: -1.2rem;
+        left: 6rem;
+        font-size: 20px;
+        font-weight: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../../static/img/Header.svg" />
+    <div class="check-container">
+      <div class="header-div">
+        <a href="../../accounts/templates/home.html">
+          <button class="back">
+            <img class="arrow-btn" src="../../static/img/arrow.svg" />
+          </button>
+        </a>
+        <p class="check-title">병원 가기 전 체크리스트</p>
+      </div>
+      <div class="check-wrapper">
+        <div class="check-box">
+          <div class="check-title"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
