@@ -9,7 +9,7 @@ def login(request):
         user = auth.authenticate(request, username=userid, password=pwd)
         if user is not None:
             auth.login(request, user)
-            return redirect('home')
+            return render(request, 'home.html')
         else:
             return render(request, 'login.html')
 
@@ -30,6 +30,18 @@ def signup(request):
             user = User.objects.create_user(username=request.POST['username'], password=request.POST['password'])
             # 로그인 한다
             auth.login(request, user)
-            return render(request, 'hospital_add.html')
+            return render(request, 'login.html')
     # signup으로 GET 요청이 왔을 때, 회원가입 화면을 띄워준다.
     return render(request, 'signup.html')
+
+def home(request):
+    return render(request, 'home.html')
+
+def info1(request):
+    return render(request, 'info1.html')
+
+def checklist(request):
+    return render(request, 'checkList.html')
+    
+def info1a(request):
+    return render(request, 'info1a.html')

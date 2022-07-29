@@ -152,7 +152,7 @@
             >
               <img src="../../static/img/hamburger.svg" />
             </button>
-            <a href="../../accounts/templates/checkList.html">
+            <a href="{% url 'checklist' %}">
               <button class="check">
                 <img style="width: 33px" src="../../static/img/check.svg" />
               </button>
@@ -231,7 +231,7 @@
 
         <div class="row mx-auto">
           <div class="main-div col-4 col-md-4">
-            <a href="../../accounts/templates/info1.html">
+            <a href="{% url 'info1' %}">
               <button class="main-btn" type="button">
                 <img
                   class="main-img"
@@ -296,7 +296,9 @@
 
         <div class="group-btn">
           <button id="reviewbtn">병원 후기 쓰기</button>
-          <button id="nearbtn">가까운 병원 찾기</button>
+          <a href="{% url 'hospital_add' %}"
+            <button id="nearbtn">가까운 병원 찾기</button>
+          </a>
         </div>
       </div>
     </div>
