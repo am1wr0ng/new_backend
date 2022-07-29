@@ -64,7 +64,7 @@
     <img src="../../static/img/Header.svg" />
     <div class="info-container">
       <div class="header-div">
-        <a href="../../accounts/templates/home.html">
+        <a href="{% url 'home' %}">
           <button class="back">
             <img class="arrow-btn" src="../../static/img/arrow.svg" />
           </button>
@@ -72,7 +72,7 @@
         <p class="info-title">월경</p>
       </div>
       <div class="info-button-group">
-        <a href="info1a.html">
+        <a href="{% url 'info1a' %}">
           <button class="info-button">
             <div class="symptom-title">월경 불순</div>
             <div class="symptom-content">월경 주기가 이상해요</div>

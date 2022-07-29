@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect
 import requests
 import json
 
-def home(request):
-    return render(request, 'index.html')
+def home_start(request):
+    return render(request, 'login.html')
 
 def search(request):
     return render(request, 'hospital.html')
