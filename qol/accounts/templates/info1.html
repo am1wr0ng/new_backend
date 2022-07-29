@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>월경</title>
+    <style>
+      .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .header-div {
+        position: relative;
+        width: 375px;
+        height: 40px;
+      }
+      .back {
+        border: 0;
+        background-color: rgba(0, 0, 0, 0);
+        float: left;
+      }
+      .info-title {
+        position: absolute;
+        top: -1.2rem;
+        left: 10.5rem;
+        font-size: 20px;
+        font-weight: 60px;
+      }
+
+      .info-button-group {
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+      .info-button {
+        width: 20rem;
+        height: 6rem;
+        border-radius: 10px;
+        border: 2px solid #8460da;
+        background-color: #ffffff;
+        text-align: left;
+        margin-bottom: 1.5rem;
+      }
+      .symptom-title {
+        margin-bottom: 5px;
+        margin-left: 9px;
+        color: #8460da;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .symptom-content {
+        margin-left: 9px;
+        font-size: 17px;
+        color: #8b8b8b;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../../static/img/Header.svg" />
+    <div class="info-container">
+      <div class="header-div">
+        <a href="../../accounts/templates/home.html">
+          <button class="back">
+            <img class="arrow-btn" src="../../static/img/arrow.svg" />
+          </button>
+        </a>
+        <p class="info-title">월경</p>
+      </div>
+      <div class="info-button-group">
+        <a href="info1a.html">
+          <button class="info-button">
+            <div class="symptom-title">월경 불순</div>
+            <div class="symptom-content">월경 주기가 이상해요</div>
+          </button>
+        </a>
+        <button class="info-button">
+          <div class="symptom-title">일차성 월경통</div>
+          <div class="symptom-content">월경 직전에 시작돼 2~3일간 아파요</div>
+        </button>
+        <button class="info-button">
+          <div class="symptom-title">이차성 월경통</div>
+          <div class="symptom-content">월경 시작 1~2주 전부터 계속 아파요</div>
+        </button>
+        <button class="info-button">
+          <div class="symptom-title">월경전 증후군(PMS)</div>
+          <div class="symptom-content">
+            월경 전에 몸이 아프고 우울하거나 화가 나요
+          </div>
+        </button>
+        <button class="info-button">
+          <div class="symptom-title">월경전 불쾌장애(PMDD)</div>
+          <div class="symptom-content">
+            마음이 너무 힘들어서 일상 생활이 어려워요
+          </div>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
