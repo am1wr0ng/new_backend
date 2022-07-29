@@ -9,7 +9,7 @@ def login(request):
         user = auth.authenticate(request, username=userid, password=pwd)
         if user is not None:
             auth.login(request, user)
-            return render(request, 'hospital_add.html')
+            return redirect('home')
         else:
             return render(request, 'login.html')
 
